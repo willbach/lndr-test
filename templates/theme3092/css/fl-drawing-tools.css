@@ -1,0 +1,22 @@
+@font-face{font-family:"fl-drawing-tools";src:url("../fonts/fl-drawing-tools.eot");src:url("../fonts/fl-drawing-tools.eot#iefix") format("embedded-opentype"),
+url("../fonts/fl-drawing-tools.woff") format("woff"),
+url("../fonts/fl-drawing-tools.ttf") format("truetype"),
+url("../fonts/fl-drawing-tools.svg") format("svg");font-weight:normal;font-style:normal;}
+.fl-drawing-tools-ico,
+[class^="fl-drawing-tools-"]:before, [class*=" fl-drawing-tools-"]:before,
+[class^="fl-drawing-tools-"]:after, [class*=" fl-drawing-tools-"]:after{font-family:'fl-drawing-tools';font-size:inherit;font-weight:400;font-style:normal;}
+.fl-drawing-tools-drawing11:before{content:"\e000";}
+.fl-drawing-tools-drops5:before{content:"\e001";}
+.fl-drawing-tools-eraser9:before{content:"\e002";}
+.fl-drawing-tools-horizontal36:before{content:"\e003";}
+.fl-drawing-tools-knife29:before{content:"\e004";}
+.fl-drawing-tools-paint61:before{content:"\e005";}
+.fl-drawing-tools-pen62:before{content:"\e006";}
+.fl-drawing-tools-pencil89:before{content:"\e007";}
+.fl-drawing-tools-rectangle16:before{content:"\e008";}
+.fl-drawing-tools-ruler21:before{content:"\e009";}
+.fl-drawing-tools-spraying:before{content:"\e00a";}
+.fl-drawing-tools-square168:before{content:"\e00b";}
+.fl-drawing-tools-square170:before{content:"\e00c";}
+.fl-drawing-tools-three155:before{content:"\e00d";}
+.fl-drawing-tools-triad:before{content:"\e00e";}

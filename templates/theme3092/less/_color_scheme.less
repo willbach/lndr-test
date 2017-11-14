@@ -1,0 +1,1150 @@
+.buttonBackgroundAlt(@bgColor, @textColor){
+  background: @bgColor;
+  color: @textColor;
+  // border: 1px solid @btnBorder;
+  border: none;
+}
+
+// Links
+// -------------------------
+
+a {
+  color: @linkColor;
+  &:hover {
+    color: @linkColorHover;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  color: @headingsColor;
+  a{
+    color: inherit;
+    &:hover{
+      color: @linkColor;
+    }
+  }
+}
+
+h3,
+h4{
+  color: @globalColor;
+  a:hover{
+    color: @grayDark;
+  }
+}
+
+b,
+*.heading-style-3,
+span.checkbox input[type="checkbox"]:checked + label.checkbox_inner:before,
+span.radio input[type="radio"]:checked + label.radio_inner:before,
+.chzn-container-single .chzn-single div,
+.moduletable.other_features .pretext,
+.moduletable.advantages .mod-menu >ul >li >a,
+.moduletable.testimonials_home_2 figcaption,
+.mod-custom__footer_contacts p:before,
+.from_the_blog .item_info,
+.btn,
+.portfolio-meta-list li strong,
+.contact_details .icons-marker,
+.moduletable.counters i.fa,
+blockquote:before,
+blockquote span.author,
+.page-category__faqs .item_title span.item_title_part0,
+.testimonials_2 figcaption,
+.data-table dl dt,
+.pricing_simple i,
+ul.flaticon li a i.fa,
+ul.flaticon li a.flatfa::before,
+.radial-progress .inset,
+.progress-horizontal .inset,
+.moduletable.footer_menu li.active,
+.icemega_modulewrap.top_search > i.fa-search,
+.icemegamenu > ul > li.parent > .iceMenuTitle:after,
+.icemegamenu > ul > li.parent > .icemega_title:after,
+.moduletable.location .mod-custom:before,
+.moduletable.info .phone:before,
+.moduletable.info .worktime:before,
+.moduletable.location .mod-custom:after,
+.moduletable.info .phone:after,
+.moduletable.info .worktime:after,
+.mod-newsflash-adv.features .item > .fa,
+.mod-newsflash-adv.features .item .flatfa,
+.list_carousel ul li .item_content figcaption,
+.address_phones .flatfa,
+.pricing_simple .item i,
+#modules-form .accordion .accordion-group .accordion-toggle:before,
+.accordion_style2 .accordion-group .accordion-toggle:before,
+.acymailing_module form .acymailing_module_form .acymailing_form .button,
+.nav-tabs > .active > a,
+.nav-tabs > .active > span,
+#Kunena div.klatest-subject-by:before,
+.address_phones i.fa,
+.page-gallery__works .item_img .more_wrapper .btn.btn-info,
+div#fixed-sidebar-right .moduletable.login .mod-login_submit a.btn-primary:hover,
+div#fixed-sidebar-right .moduletable.login .logout-button a.btn-primary:hover,
+.moduletable.home_2 .icemega_modulewrap.top_search > i.fa-search:hover,
+.moduletable.currency_selector .active_currency,
+.moduletable.currency_selector .currency_wrapper form ul li button:hover,
+.moduletable.currency_selector .currency_wrapper form ul li button.active{
+  color: @globalColor;
+}
+
+.chzn-container .chzn-results li.highlighted,
+.portfolio-thumbs ul li a:before,
+.jg_subcatelem_txt:before,
+.jg_imgalign_catimgs .jg_catelem_txt:before,
+.mod-menu .nav.menu.nav-pills > li.active > a,
+ul.flaticon li a:hover i.fa,
+ul.flaticon li a.flatfa:hover:before,
+#bottom,
+.mod-newsflash-adv.mod-newsflash-adv__counters .flatfa,
+.mod-newsflash-adv.counters .flatfa,
+.pricing_detailed .row-fluid .item .item_content .price,
+#modules-form .accordion .accordion-group .accordion-toggle:hover,
+#modules-form .accordion .accordion-group .accordion-toggle.selected,
+.accordion_style2 .accordion-group .accordion-toggle:hover,
+.accordion_style2 .accordion-group .accordion-toggle.selected,
+.mod-newsflash-adv.mod-newsflash-adv__team_team .item_title,
+.pricing_simple .item .item_content,
+.moduletable.advantages .mod-menu >ul >li >a:hover:before,
+.page-gallery__works .item_img .more_wrapper .btn.btn-info:hover,
+.progress-horizontal .bar,
+#adminForm .input-prepend .add-on.btn,
+#adminForm .input-prepend input ~ .btn,
+.chzn-container-multi .chzn-choices li.search-choice,
+.jssora11l:hover,
+.jssora11r:hover{
+  background: @globalColor;
+}
+
+.chzn-container-multi {
+  &.chzn-container-active{
+    .chzn-choices{
+      border-color: @globalColor;
+    }
+  }
+}
+
+table{
+  th{
+    background: @tableHeaderBackground;
+    color: @globalColor;
+  }
+  tr{
+    td{
+      &:before{
+        color: @globalColor;
+      }
+    }
+  }
+}
+
+.item_img a,
+.banneritem a,
+ul.gallery .gallery-grid .item_img{
+  &:before,
+  &:after{
+    border-color: lighten(desaturate(spin(@globalColor, -0.3125), 28.994195451517733%), 41.37254901960784%);
+  }
+}
+
+// Form controls
+// -------------------------
+
+// Shared size and type resets
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  &:focus,
+  &:focus:invalid:focus{
+    border-color: @globalColor;
+  }
+}
+
+.caret {
+  border-top: 4px solid @btnColor;
+}
+
+.btn {
+  &:hover, 
+  &.active, 
+  &.selected{
+    color: @grayDark;
+  }
+}
+
+.btn-primary{
+  color: @white;
+  background: lighten(desaturate(spin(@globalColor, -31.645833333333343), 24.26274885553071%), 23.921568627450974%);
+  &:hover{
+    color: @white;
+    background: @grayDark;
+  }
+}
+
+.list1  ul,
+.archive-module,
+.categories-module,
+.mod-menu .nav.menu,
+.category-module,
+.category-modulefaqs_anchors{
+  li{
+    &:before{
+      color: @linkColor;
+    }
+    a{
+      &:hover{
+        color: @linkColor;
+      }
+    }
+  }
+}
+
+.pagination{
+  >ul{
+    >li{
+      >.pagenav,
+      >.hasTooltip{
+        color: @paginationLink;
+        background: @paginationBackground;
+      }
+      >span.pagenav{
+        background: @paginationActiveBackground;
+        color: @paginationSpan;
+        border-color: @btnBorder !important;
+      }
+      >a{
+        &:focus{
+          background: @paginationBackground;
+          &:hover{
+            background: @paginationActiveBackground;
+          }
+        }
+        &:hover{
+          background: @paginationActiveBackground;
+          color: @paginationSpan;
+          border-color: @btnBorder !important;
+        }
+      }
+    }
+  }
+}
+
+#logo h1,
+#copyright .siteName .item_title_part0,
+body.option-com_virtuemart #copyright .copyright_text{
+  &:before{
+    background: @globalColor;
+  }
+  &:after{
+    background: lighten(desaturate(spin(@globalColor, -31.645833333333343), 24.26274885553071%), 23.921568627450974%);
+  }
+}
+
+.icemega_modulewrap.top_search #searchword{
+  background: lighten(desaturate(spin(@globalColor, -31.423611111111114), 24.55490921910804%), 39.607843137254896%);
+}
+
+.icemega_modulewrap.top_search > i.fa-search:hover{
+  color: lighten(desaturate(spin(@globalColor, -31.423611111111114), 24.55490921910804%), 39.607843137254896%);
+}
+
+#com_virtuemart{
+  .jssort02 {
+    .p:hover .c,
+    .pav .c{
+      border-color: @globalColor;
+    }
+  }
+  .ratingbox {
+    .stars-orange{
+      color: lighten(desaturate(spin(@globalColor, -16.3125), 26.984534978366085%), 14.31372549019607%);
+    }
+    &.dummy{
+      color: @globalColor;
+    }
+  }
+}
+
+.moduletable.other_features{
+  i[class*="material-design"]{
+    color: @globalColor3;
+  }
+}
+
+/*---=== Image Swoop ===---*/
+
+.camera_wrap{
+  .camera_pag .camera_pag_ul {
+    li{
+      background: @linkColor;
+      &.cameracurrent,
+      &:hover {
+        background: @linkColorHover;
+      }
+    }
+  }
+}
+.camera_prevThumbs,
+.camera_nextThumbs,
+.camera_prev,
+.camera_next,
+.camera_commands,
+.camera_thumbs_cont {
+  color: @globalColor;
+  &:hover{
+    color: @white;
+  }
+}
+
+.moduletable.features_home_2{
+  .item{
+    .item_content{
+      >a{
+        background: @globalColor;
+      }
+    }
+  }
+  .item_odd{
+    .item_content{
+      >a{
+        background: lighten(desaturate(spin(@globalColor, -16.3125), 26.984534978366085%), 14.31372549019607%);;
+      }
+    }
+  }
+}
+
+.moduletable.options,
+.moduletable.services{
+  .item_num0{
+    background: @globalColor3;
+      &:before{
+        background: @globalColor3;
+      }
+  }
+  .item_num1{
+    background: @globalColor;
+  }
+  .item_num2{
+    background: @globalColor2;
+      &:before{
+        background: @globalColor2;
+      }
+  }
+}
+
+.mod-newsflash-adv_custom-link{
+  .btn.btn-primary{
+    background: @globalColor;
+    &:hover{
+      background: @grayDark;
+    }
+  }
+}
+
+/*---------========= Pages =========---------*/
+
+.item_info_dl{
+  dd{
+    .item_createdby,
+    .item_published{
+      color: @linkColor;
+    }
+  }
+}
+
+.item_interotext,
+.item_fulltext{
+  ul{
+    li{
+      color: @linkColorHover;
+      &:before{
+        color: @linkColor;
+      }
+      a{
+        &:hover{
+          color: @linkColor;
+        }
+      }
+    }
+  }
+}
+
+/*---=== History ===---*/
+
+.page-category__history{
+  .items-row{
+    >div:before,
+    &:before{
+      background: @linkColor;
+    }
+  }
+}
+
+/*---=== Portfolio ===---*/
+
+.item_img{
+  .articleGalleryZoom,
+  .galleryZoomIcon{
+    &:before{
+      background: @linkColor;
+    }
+  }
+}
+
+ul#sort li a{
+  color: @globalColor;
+  border-color: @globalColor;
+  &:hover,
+  &.selected{
+    background: @globalColor;
+  }
+}
+
+.page-blog{
+  .btn-primary{
+    background: @globalColor;
+    &:hover{
+      background: @grayDark;
+    }
+  }
+}
+
+#back-top {
+  a {
+    color: @linkColor;
+    border: 2px solid @linkColor;
+    &:hover{
+      color: @bodyBackground;
+      background: @linkColor;
+    }
+  }
+}
+
+/*---=== Testimonials ===---*/
+
+#section-kmt{
+  .kmt-time{
+    a{
+      &:hover{
+        color: @linkColor;
+      }
+    }
+    i{
+      color: @linkColor;
+    }
+  }
+  .kmt-head{
+    color: @globalColor;
+  }
+  .kmt-item{
+    .kmt-form-submit{
+      a.replyButton{
+        background: @btnBackgroundHighlight;
+        border-color: @btnBorder;
+        color: @btnColorHighlight;
+        &:hover{
+          background: @btnBackground;
+          border-color: @btnBackground;
+          color: @btnColor;
+        }
+      }
+    }
+  }
+}
+
+/*---=== Caroufredsel ===---*/
+
+.caroufredsel_prev,
+.caroufredsel_next{
+  color: @globalColor;
+  &:hover{
+    color: @grayDark;
+  }
+}
+
+/*---=== Megamenu ===---*/
+
+.icemegamenu {
+  > ul {
+    > li {
+      > a.iceMenuTitle {
+        &:hover,
+        &.icemega_active{
+          color: @globalColor;
+        }
+      }
+      &.hover{
+        > a.iceMenuTitle {
+          color: @globalColor;
+        }
+      }
+      &.current,
+      &.active{
+        > a.iceMenuTitle {
+          color: @globalColor;
+        }
+      }
+      &.current{
+        & ~ .active{
+          > a.iceMenuTitle {
+            color: #222;
+          }
+        }
+      }
+    }
+  }
+  .ice_menu{
+    .iceModuleTile{
+      color: @white;
+    }
+  }
+}
+
+ul.icesubMenu li {
+  a.iceMenuTitle {
+    color: @subMenuItemColor;
+  }
+  &.active,
+  &:hover,
+  &.hover{
+    >a.iceMenuTitle {
+      color: @subMenuItemColorAct;
+      background: @subMenuItemBgColorAct;
+    }
+  }
+  &.current{
+     & ~ .active{
+      >a.iceMenuTitle {
+        color: @subMenuItemColor;
+        background: @subMenuItemBgColor;
+        &:hover{
+          color: @subMenuItemColorAct;
+          background: @subMenuItemBgColorAct;
+        }
+      }
+    }
+  }
+}
+
+/*---=== Tabs ===---*/
+
+.nav-tabs{
+  >li{
+    >a{
+      color: @globalColor !important;
+    }
+  }
+}
+
+/*---=== Accordions ===---*/
+
+.accordion_style1{
+  .accordion-toggle{
+    color: @linkColorHover;
+    &:before{
+      color: @globalColor;
+    }
+    &.selected,
+    &:hover{
+      &:before{
+        background: @globalColor;
+      }
+    }
+  }
+}
+
+#modules-form .accordion,
+.accordion_style2{
+  .accordion-group{
+    .accordion-toggle{
+      color: @linkColorHover;
+    }
+  }
+}
+
+/*---=== Pricing tables ===---*/
+
+.pricing_detailed{
+  .row-fluid{
+    .item{
+      &.featured{
+        .item_content{
+          background: @globalColor;
+          color: @white;
+          .price{
+            color: @globalColor;
+          }
+          ul li{
+            color: inherit;
+            &:before{
+              color: inherit;
+            }
+          }
+        }
+      }
+    }
+    .item_content{
+      .price{
+        background: @linkColor;
+      }
+    }
+    .item_num0{
+      .item_title,
+      .price{
+        color: @white;
+      }
+    }
+    .item_num1{
+      .item_title,
+      .price{
+        color: @white;
+      }
+    }
+    .item_num2{
+      .item_title,
+      .price{
+        color: @white;
+      }
+    }
+  }
+  &.pricing_detailed_2{
+    .row-fluid{
+      .item{
+        .item_content{
+          background: none;
+          .price{
+            color: @globalColor !important;
+            bolder-bottom-color: @globalColor;
+          }
+        }
+        &.featured{
+          .item_content{
+            background: #f6f8fa;
+            .btn.btn-primary{
+              background: @globalColor;
+              &:hover{
+                background: @grayDark;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.item_introtext,
+.item_fulltext,
+.category_desc{
+  strong{
+    color: @linkColorHover;
+  }
+  mark{
+    background: @linkColor;
+  }
+  ol li,
+  ol li a:hover,
+  ul.icons li,
+  ul.icons li a{
+    color: @globalColor;
+  }
+  ul.icons li a:hover:before{
+    background: @globalColor;
+  }
+  ul li{
+    &:before,
+    a:hover{
+      color: @globalColor;
+    }
+  }
+}
+
+ul.flaticon li a{
+  color: @globalColor !important;
+  &:hover{
+    color: @textColor !important;
+  }
+}
+
+/*---=== Kunena ===---*/
+
+#Kunena{
+  #ktab li{
+    &#current{
+      span{
+        color: @linkColor;
+      }
+    }
+    &:hover{
+      a,
+      span{
+        color: @linkColor;
+      }
+    }
+    a,
+    span{
+      color: @linkColorHover;
+    }
+  }
+  .kblock div.kheader{
+    color: @linkColor;
+    >span{
+      a{
+        &:hover{
+          color: @linkColorHover;
+        }
+      }
+    }
+  }
+  .k-profile{
+    .kheader{
+      a.kwho-admin{
+        color: @btnColor !important;
+      }
+    }
+  }
+  .kwhoicon,
+  .kstatsicon,
+  .kcol-ktopicicon a,
+  .kcol-ktopicicon.unanswered a,
+  .kicon-profile-location,
+  .kicon-profile-gender-male,
+  .kicon-profile-birthdate,
+  div.kiconrow .kicon-profile,
+  .kicon-profile-email{
+    &:before{
+      color: @linkColor;
+    }
+  }
+  #kprofile-tabs,
+  #kprofile-edit{
+    dl.tabs{
+      dt{
+        &.open,
+        &:hover{
+          color: @linkColor;
+        }
+      }
+    }
+  }
+  .kwhoonline,
+  ul#kstatslistleft li,
+  ul#kstatslistright li{
+    strong{
+      color: @linkColor;
+    }
+  }
+  div.klist-actions-info-all{
+    color: @linkColor;
+  }
+  fieldset{
+    legend{
+      color: @linkColorHover;
+    }
+  }
+  div.kmsg-header{
+    span.kmsgtitle{
+      color: @linkColorHover;
+    }
+  }
+  span.kcat-topics-number,
+  span.ktopic-views-number,{
+    background: @linkColor;
+  }
+  span.kcat-replies-number{
+    background: @globalColor;
+  }
+  div.kstats-bar{
+    div.bar{
+      /*#gradient.horizontal(@globalColor, @globalColor2);*/
+    }
+  }
+  td.klist-actions-info-all{
+    color: @linkColor;
+  }
+  div.klatest-subject-by{
+    &:before{
+      /*color: @globalColor;*/
+    }
+  }
+  span.klatest-subject-time,
+  span.ktopic-date{
+    &:before{
+      color: @globalColor;
+    }
+  }
+}
+
+/*---=== Olark ===---*/
+
+#habla_window_div {
+  #habla_topbar_div{
+    background: @linkColor !important;
+  }
+  .habla_offline_submit_input{
+    .buttonBackgroundAlt(@btnBackground, @btnColor) !important;
+    &:hover, 
+    &:active, 
+    &:focus, 
+    &.active, 
+    &.selected{
+      color: @btnColorHighlight !important;
+      background: @btnBackgroundHighlight !important;     
+    }
+  }
+}
+
+/*---=== Login Sidebar ===---*/
+
+div#fixed-sidebar-right{
+  .moduletable.login{
+    color: @white;
+    .mod_login_wrapper{
+      background: @globalColor;
+    }
+    >i.fa-user{
+      background: @globalColor;
+      color: @white;
+    }
+    span.checkbox{
+      label.checkbox_inner{
+        border-color: darken(saturate(spin(@globalColor, -0.6430785123966984), 1.124992230716643%), 2.5490196078431495%);
+      }
+    }
+    .mod-login_submit,
+    .logout-button{
+      button.btn-primary{
+        color: @globalColor;
+      }
+    }
+  }
+}
+
+.moduletable.virt_cart .total_products i::before{
+  color: lighten(desaturate(spin(@globalColor, -16.3125), 26.984534978366085%), 14.31372549019607%);
+}
+
+.moduletable.user_menu{
+  .nav.menu{
+    >li{
+      >ul.nav-child{
+        li{
+          >a{
+            &:hover{
+              color: @globalColor;
+              &:before{
+                color: @globalColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.moduletable.virt_search{
+  .module_container{
+    i:hover{
+      color: @globalColor;
+    }
+    .btn:hover{
+      i{
+        color: @globalColor;
+      }
+    }
+  }
+}
+
+.sequence-prev,
+.sequence-next{
+  &:hover{
+    color: @globalColor !important;
+  }
+}
+
+.slider-shop{
+  .btn-primary{
+    background: @globalColor;
+    &:hover{
+      background: @grayDark;
+    }
+  }
+}
+
+.icemegamenu{
+  .virtuemart_categories{
+    li{
+      a{
+        &:before{
+          color: @globalColor;
+        }
+        &:hover{
+          color: lighten(desaturate(spin(@globalColor, -16.3125), 26.984534978366085%), 14.31372549019607%);
+          &:before{
+            color: @grayDark;
+          }
+        }
+      }
+    }
+  }
+}
+
+.moduletable.categories_main{
+  .vm-category__title{
+    a{
+      color: @globalColor;
+      &:hover{
+        color: @grayDark;
+      }
+    }
+  }
+}
+
+button.btn.btn-primary.addtocart-button{
+  background: @globalColor;
+  &:hover{
+    background: lighten(desaturate(spin(@globalColor, -16.3125), 26.984534978366085%), 14.31372549019607%);
+  }
+}
+
+#com_virtuemart{
+  ul.steps{
+    li{
+      &.current{
+        span{
+          background: @globalColor;
+          color: #fff;
+          &:after{
+            border-top-color: @linkColor;
+            border-bottom-color: @linkColor;
+          }
+        }
+      }
+    }
+  }
+  .vm-product-details-content{
+    .shipment_info{
+      color: @globalColor;
+    }
+    .prices_block{
+      .PricesalesPrice{
+        color: @globalColor;
+      }
+    }
+    .quantity-box{
+      .quantity-controls{
+        &:hover{
+          color: @globalColor;
+        }
+      }
+    }
+  }
+  .productdetails-view{
+    .product-description .title,
+    .product-related-products,
+    .product-related-categories {
+      > *[class*="heading-style"]{
+        color: @globalColor;
+      }
+      .caroufredsel_prev,
+      .caroufredsel_next{
+        &:hover{
+          color: lighten(desaturate(spin(@globalColor, -31.645833333333343), 24.26274885553071%), 23.921568627450974%);
+        }
+      }
+    }
+  }
+
+  .vm-product-horizon,
+  .product-related-products{
+    .vm-product-media-container > a{
+      &:hover{
+        .sale_icon{
+          background: @globalColor;
+          color: @white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #com_virtuemart{
+    ul.steps{
+      li{
+        &.current{
+          span{
+            &:after{
+              border-top-color: #ededed;
+            }
+          }
+          & + li{
+            span{
+              &:after{
+                border-top-color: @globalColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.moduletable.info_shop{
+  i{
+    color: lighten(desaturate(spin(@globalColor, -16.3125), 26.984534978366085%), 14.31372549019607%);
+  }
+}
+
+.moduletable.catalog_cats{
+  ul.virtuemart_categories{
+    >li{
+      a{
+        &:hover,
+        &.active{
+          color: @globalColor;
+          &:before{
+            color: @grayDark;
+          }
+        }
+      }
+      li{
+        >a{
+          &:before{
+            color: @globalColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+ul.vmmanufacturerbrands{
+  li{
+    >a{
+      &:hover{
+        color: @globalColor;
+        &:before{
+          color: @grayDark;
+        }
+      }
+      &:before{
+        color: @globalColor;
+      }
+    }
+  }
+}
+
+.moduletable.about_shop_top_blocks{
+  .caption{
+    color: lighten(desaturate(spin(@globalColor, -16.3125), 26.984534978366085%), 14.31372549019607%);
+  }
+  .item_content{
+    i{
+      color: lighten(desaturate(spin(@globalColor, -16.3125), 26.984534978366085%), 14.31372549019607%);
+    }
+  }
+}
+
+.page-contact-custom{
+  i{
+    background: lighten(desaturate(spin(@globalColor, -16.3125), 26.984534978366085%), 14.31372549019607%);
+  }
+  .contact_address,
+  .contact_details_telephone{
+    color: @globalColor;
+  }
+}
+
+.moduletable.delivery,
+.moduletable.payment{
+  i{
+    background: lighten(desaturate(spin(@globalColor, -16.3125), 26.984534978366085%), 14.31372549019607%);
+  }
+}
+
+.offline_container{
+  .countdown{
+    >span{
+      background: rgba(red(lighten(desaturate(spin(@globalColor, -16.3125), 26.984534978366085%), 14.31372549019607%)), green(lighten(desaturate(spin(@globalColor, -16.3125), 26.984534978366085%), 14.31372549019607%)), blue(lighten(desaturate(spin(@globalColor, -16.3125), 26.984534978366085%), 14.31372549019607%)), .9);
+      &:nth-child(even){
+        background: rgba(red(@globalColor), green(@globalColor), blue(@globalColor), .9);
+      }
+    }
+  }
+  .acymailing_module{
+    form .acymailing_module_form .acymailing_form{
+      .button{
+        background: lighten(desaturate(spin(@globalColor, -16.3125), 26.984534978366085%), 14.31372549019607%);
+      }
+    }
+  }
+}
+
+.buttons{
+  a{
+    &.type1{
+      background: @globalColor;
+      &:hover{
+        background: @grayDark;
+      }
+    }
+    &.type2{
+      &:hover{
+        color: @globalColor;
+      }
+    }
+  }
+}
+
+.rd-mobilemenu_ul a.iceMenuTitle:hover,
+.rd-mobilemenu_ul li.active > a.iceMenuTitle{
+  background: @globalColor;
+  color: @white;
+}
+.radial-progress .circle .fill{
+  border-color: @globalColor;
+}
+.social-links li a{
+  color: @globalColor !important;
+  &:hover{
+    background: @globalColor;
+  }
+}
+.pricing_simple .item .item_content:hover{
+  .item_title{
+    color: @globalColor;
+  }
+  .price{
+    span{
+      color: @globalColor;
+    }
+    small{
+      color: @globalColor;
+    }
+  }
+}
+
+@import "_updates/_extended/_import-color_scheme.less";

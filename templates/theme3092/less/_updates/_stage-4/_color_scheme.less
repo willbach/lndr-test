@@ -1,0 +1,61 @@
+@color2: lighten(desaturate(spin(@globalColor, -16.3125), 26.984534978366085%), 14.31372549019607%);
+@color3: lighten(desaturate(spin(@globalColor, -15.722336065573785), 14.83490341611953%), 19.2156862745098%);
+@color4: darken(saturate(spin(@globalColor, 19.6875), 20.071684587813607%), 25.882352941176475%);
+@color5: lighten(desaturate(spin(@globalColor, -31.645833333333343), 24.26274885553071%), 23.921568627450974%);
+@color6: darken(desaturate(spin(@globalColor, 0.2589285714285836), 0.1897533206831099%), 6.470588235294123%);
+@color7: lighten(desaturate(spin(@globalColor, -7.672499999999985), 15.62571493937314%), 9.607843137254896%);
+
+.features_home_one_page .item_odd{
+	background: @color6;
+}
+
+.features_home_one_page .item_even{
+	background: @color2;
+}
+
+.body__home_one_page{
+	#mainbottom{
+		background: @globalColor;
+		&:before{
+			background: -moz-radial-gradient(center, ellipse cover, @color3 0%, @globalColor 50%);
+			background: -webkit-gradient(radial, center center, 0px, center center, 50%, color-stop(0%,@color3), color-stop(50%,@globalColor));
+			background: -webkit-radial-gradient(center, ellipse cover, @color3 0%,@globalColor 50%);
+			background: -o-radial-gradient(center, ellipse cover, @color3 0%,@globalColor 50%);
+			background: -ms-radial-gradient(center, ellipse cover, @color3 0%,@globalColor 50%);
+			background: radial-gradient(ellipse at center, @color3 0%,@globalColor 50%);
+		}
+	}
+}
+
+.sequence-pagination li:hover,
+.sequence-pagination li.current{
+	background: @globalColor;
+}
+
+.support_item{
+	&:nth-child(odd){
+		.item__module>a{
+		background: @color6;
+	}
+	}
+	&:nth-child(even){
+		.item__module>a{
+			background: @color2;
+		}
+	}
+}
+
+.support_item .mod-articles-single_custom-link .btn-primary,
+.contact_list li i,
+.moduletable.agent h6,
+.home_one_page .sequence-slider > .sequence-canvas li > .info .item_introtext h1{
+	color: @globalColor;
+}
+
+.home_one_page .sequence-slider > .sequence-canvas li > .info .item_content .btn{
+	border-color: @globalColor !important;
+	color: @globalColor;
+	&:hover{
+		background: @globalColor;
+	}
+}

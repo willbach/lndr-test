@@ -1,0 +1,36 @@
+@color2: lighten(desaturate(spin(@globalColor, -16.3125), 26.984534978366085%), 14.31372549019607%);
+@color3: lighten(desaturate(spin(@globalColor, -15.722336065573785), 14.83490341611953%), 19.2156862745098%);
+@color4: darken(saturate(spin(@globalColor, 19.6875), 20.071684587813607%), 25.882352941176475%);
+@color5: lighten(desaturate(spin(@globalColor, -31.645833333333343), 24.26274885553071%), 23.921568627450974%);
+
+.moduletable.services_main .item_content > i[class*="material-design"]{
+	color: @color2;
+}
+
+ul.icesubMenu li.current > a.iceMenuTitle{
+	background: @globalColor;
+	color: @white;
+}
+
+.moduletable.blog_search .btn-primary:hover{
+	color: @globalColor;
+}
+
+.categories-moduleblog_categories li > a:hover,
+.archive-moduleblog_archives li > a:hover{
+	color: @color4;
+}
+
+.tagspopularblog_tags ul li a:hover,
+.mod-custom__page_loader .logo h1:after{
+	background: @color5;
+}
+
+ul.icesubMenu li.current ~ li > a.iceMenuTitle:hover,
+.mod-custom__page_loader .logo h1:before{
+	background: @globalColor;
+}
+
+.mod-custom__page_loader .loader{
+	background: @loader 50% 50% no-repeat;
+}

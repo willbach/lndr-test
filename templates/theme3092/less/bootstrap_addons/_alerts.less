@@ -1,0 +1,109 @@
+//
+// Alerts
+// --------------------------------------------------
+
+
+// Base styles
+// -------------------------
+
+.alert {
+  padding: 28px 128px 28px;
+  min-height: 60px;
+  margin-bottom: @baseLineHeight;
+  background-color: @warningBackground;
+  position: relative;
+  &:before{
+    position: absolute;
+    font-family: FontAwesome;
+    left: 26px;
+    top: 50%;
+    line-height: 0;
+    content: '\f071';
+    font-size: 79px;
+    color: @warningIcon;
+  }
+}
+.alert h4 {
+  // Specified for the h4 to prevent conflicts of changing @headingsColor
+  color: @warningText;
+}
+.alert h4 {
+  margin: 0 0 5px;
+}
+.alert p{
+  padding-bottom: 0;
+}
+
+// Adjust close link position
+.alert .close {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  line-height: @baseLineHeight;
+}
+
+
+// Alternate styles
+// -------------------------
+
+.alert-success {
+  background-color: @successBackground;
+  border-color: @successBorder;
+  color: @successText;
+  &:before{
+    content: '\f05d';
+    font-size: 95px;
+    color: @successIcon;
+  }
+}
+.alert-success h4 {
+  color: @successText;
+}
+.alert-danger,
+.alert-error {
+  background-color: @errorBackground;
+  border-color: @errorBorder;
+  color: @errorText;
+  &:before{
+    content: '\f05c';
+    font-size: 95px;
+    color: @errorIcon;
+  }
+}
+.alert-danger h4,
+.alert-error h4 {
+  color: @errorText;
+}
+.alert-info {
+  background-color: @infoBackground;
+  border-color: @infoBorder;
+  color: @infoText;
+  &:before{
+    content: '\f05a';
+    font-size: 95px;
+    color: @infoIcon;
+  }
+}
+.alert-info h4 {
+  color: @infoText;
+}
+
+
+// Block alerts
+// -------------------------
+
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.alert-block > p,
+.alert-block > ul {
+  margin-bottom: 0;
+}
+.alert-block p + p {
+  margin-top: 5px;
+}
+
+.alert-heading{
+  color: inherit;
+}

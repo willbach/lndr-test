@@ -1,0 +1,102 @@
+@color2: lighten(desaturate(spin(@globalColor, -16.3125), 26.984534978366085%), 14.31372549019607%);
+@color3: lighten(desaturate(spin(@globalColor, -15.722336065573785), 14.83490341611953%), 19.2156862745098%);
+
+.features_home_3 .item_content i,
+.body__home_3 #mainbottom-3,
+.moduletable.moddle_blocks_about2 .btn-primary,
+.moduletable.features_about2 .item_content > a > i,
+.moduletable.steps_1 .item_odd .item_content > a,
+.moduletable.steps_2 .item_odd .item_content > a > i,
+.moduletable.steps_3 .item_odd .item_content > a .item_container > i,
+.counters > .odd,
+.body__landing #mainbottom-3 .moduletable.parallax_container .parallax{
+	background: @globalColor;
+}
+
+.features_home_3 .item_content a:hover i,
+.moduletable.home_3_contacts i[class*="material-design"],
+.body__home_3 #maintop,
+.body__landing #map,
+.pagination ul li > span.pagenav,
+.moduletable.moddle_blocks_about2 .btn-primary:hover,
+.moduletable.features_about2 .item_content > a:hover > i,
+.moduletable.steps_1 .item_even .item_content > a,
+.moduletable.steps_2 .item_even .item_content > a > i,
+.moduletable.steps_3 .item_even .item_content > a .item_container > i,
+.counters > .even{
+	background: @color2;
+}
+
+.moduletable.home_3_contacts .phone,
+.moduletable.home_3_contacts .address_text,
+.moduletable.steps_3 .item_content .subtitle,
+.accordion_style2.faqs .accordion-toggle:after,
+.accordion_style3 .accordion-toggle,
+.vimeo_desc .item_introtext,
+.pricing_detailed.pricing_detailed_2 .row-fluid .item.featured .item_content ul li::before{
+	color: @globalColor;
+}
+.team_about2 .item_introtext .social-links li a:hover{
+	color: @globalColor !important;
+}
+
+.features_home_3 .item_content a:hover .item_title,
+.moduletable.discover .item_content i[class*="material-design"],
+.moduletable.moddle_blocks_about2 .item_content > i,
+.moduletable.about_2_top_blocks .item_content .item_introtext > i,
+.moduletable.features_about2 .item_content h3,
+.moduletable.steps_2 .item_content > a .item_title:before,
+.moduletable.steps_3 .item_content > a .item_container .item_title:before,
+.accordion_style3 .accordion-toggle>i,
+.features_2_landing .item_content > i[class*="material-design"]{
+	color: @color2;
+}
+.body__home_3 #maintop:before,
+.body__landing #map:before{
+background: -moz-radial-gradient(center, ellipse cover, @color3 0%, @color2 50%);
+background: -webkit-gradient(radial, center center, 0px, center center, 50%, color-stop(0%,@color3), color-stop(50%,@color2));
+background: -webkit-radial-gradient(center, ellipse cover, @color3 0%,@color2 50%);
+background: -o-radial-gradient(center, ellipse cover, @color3 0%,@color2 50%);
+background: -ms-radial-gradient(center, ellipse cover, @color3 0%,@color2 50%);
+background: radial-gradient(ellipse at center, @color3 0%,@color2 50%);
+}
+.body__home_3.scrolled{
+	.icemegamenu {
+	  > ul {
+	    > li {
+	      > a.iceMenuTitle {
+	        &:hover,
+	        &.icemega_active{
+	          color: @globalColor;
+	        }
+	      }
+	      &.hover,
+	      &.current,
+	      &.active{
+	        > a.iceMenuTitle {
+	          color: @globalColor;
+	        }
+	      }
+	      &.current{
+	        & ~ .active{
+	          > a.iceMenuTitle {
+	            color: #222;
+	          }
+	        }
+	      }
+	    }
+	  }
+	}
+}
+.moduletable.steps_1 .item + .item:after{
+	border-top-color: @globalColor;
+}
+.moduletable.steps_1 .item + .item.item_odd:after{
+	border-top-color: @color2;
+}
+.moduletable.testimonials_landing .item_introtext:before{
+	color: lighten(desaturate(spin(@globalColor, -31.645833333333343), 24.26274885553071%), 23.921568627450974%);
+}
+.moduletable.testimonials_landing .item_content figcaption{
+	color: lighten(saturate(spin(@globalColor, -0.4584854014598534), 0.027016804452372867%), 2.5490196078431353%);
+}
